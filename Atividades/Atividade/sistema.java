@@ -1,4 +1,4 @@
-package atividades;
+package Atividade;
 
 public class Sistema {
     public Computador computador;
