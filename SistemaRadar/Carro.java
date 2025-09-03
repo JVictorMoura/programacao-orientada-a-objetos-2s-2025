@@ -22,7 +22,7 @@ public class Carro {
         return this.placa;
     }
 
-    public void setVelocidade(Integer velocidade) {
+    public void setVelocidade(Integer velocidade) { {
         if (velocidade != null && velocidade >= 0) {
             this.velocidade = velocidade;
         }
