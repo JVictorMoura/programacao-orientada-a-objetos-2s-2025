@@ -1,4 +1,4 @@
-package AtividadesAtividade;
+package Atividades.Atividade;
 
 public class Computador {
     private Integer memoriaRam;
