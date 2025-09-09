@@ -1,4 +1,4 @@
-package Atividades.Atividade;
+package Atividades.Atividade1;
 
 public class Programa {
 
