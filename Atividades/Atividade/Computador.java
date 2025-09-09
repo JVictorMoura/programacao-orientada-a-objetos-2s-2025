@@ -1,3 +1,4 @@
+
 package Atividades.Atividade;
 
 public class Computador {
@@ -11,7 +12,7 @@ public Computador (Integer memoriaRam, Integer sSD, Integer nucleos, Float opera
     this.sSD = sSD;
     this.nucleos = nucleos;
     this.operacoesPorSegundo = operacoesPorSegundo;
-}public Integer memoriaRam() {
+}public Integer getMemoriaRam() {
     return this.memoriaRam; 
 }
 public Integer getSSD() {
