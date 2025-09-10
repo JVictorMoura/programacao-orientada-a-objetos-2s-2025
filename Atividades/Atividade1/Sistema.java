@@ -10,7 +10,7 @@ public class Sistema {
     public Computador getComputador() { return computador; }
     public void setComputador(Computador computador) { this.computador = computador; }
 
-    public boolean executarPrograma(Programa p) {
+    public Boolean executarPrograma(Programa p) {
      
         if (p.getSSDOcupado() > computador.getSSD()) {
             System.out.println("Erro na instalação do programa, SSD insuficiente.");
