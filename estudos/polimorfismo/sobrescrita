@@ -1,0 +1,12 @@
+@Override
+a partir de uma herança de métodos, podemos definir uma sobrescrita no metodo da CLASSE com as caracteristicas herdadas para que ele tenha 
+suas proprias funcoes.
+da um novo comportamento para o metodo que ja existe na classe pai
+
+
+public Class A extends X{
+
+public void X_method () {
+    xxxxxxxx;
+}
+}

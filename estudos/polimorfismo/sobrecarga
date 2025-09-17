@@ -1,0 +1,21 @@
+podemos sobrecarregar um metodo de uma Classe definindo varios metodos com o mesmo nome e com parametros de tipos de dados diferentes.
+ podendo dar instrucoes diferentes para cada metodo sobrecarregado
+
+
+
+
+ public Class A (){
+    xxxxxx;
+ }
+ public Class A (Int a){
+    xxxxxx;
+ }
+ public Class A (String a){
+    xxxxxx;
+    aaaaa;
+ }
+ public Class A (String a, Int A){
+    xxxxxx;
+    aaaaa;
+    fffff;
+ }

@@ -1,9 +1,9 @@
 
 package Atividades.Atividade1;
-public class Sistema {
+public class SistemaOperacional {
     private Computador computador;
 
-    public Sistema(Computador computador) {
+    public SistemaOperacional(Computador computador) {
         this.computador = computador;
     }
 

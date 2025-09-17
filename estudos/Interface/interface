@@ -1,0 +1,16 @@
+
+parecido com herança, porem os metodos "herdados" nao possuem implementação, 
+public Class Br implements B{
+    public void Ardd implements B{
+        public void B_method(){
+        aaaaa;
+        }
+    }
+}
+public Class Br implements B{
+    public void Ardd implements b{
+        public void B_method(){
+        xxxxxxx;
+        }
+    }   
+}
