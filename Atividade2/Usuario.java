@@ -9,11 +9,11 @@ public class Usuario extends Pessoa {
     }
 
     @Override
-    public void exibirInfo() {
+    public void exibirInfo() { //implementacao de comando
         System.out.println("Usuário:");
-        System.out.println("Nome: " + getNome());
-        System.out.println("Email: " + getEmail());
-        System.out.println("Matrícula: " + matricula);
+        System.out.println("Nome: " + this.getNome());
+        System.out.println("Email: " + this.getEmail());
+        System.out.println("Matrícula: " + this.matricula);
     }
 
     public Integer getMatricula() {

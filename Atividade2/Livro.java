@@ -11,9 +11,9 @@ public class Livro extends Material {
     @Override
     public void descricao() {
         System.out.println("Livro:");
-        System.out.println("Título: " + getTitulo());
-        System.out.println("Ano de Publicação: " + getAnoPublicacao());
-        System.out.println("Autor: " + autor);
+        System.out.println("Título: " + this.getTitulo());
+        System.out.println("Ano de Publicação: " + this.getAnoPublicacao());
+        System.out.println("Autor: " + this.autor);
     }
 
     public String getAutor() {

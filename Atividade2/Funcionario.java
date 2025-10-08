@@ -10,9 +10,9 @@ public class Funcionario extends Pessoa {
     @Override
     public void exibirInfo() {
         System.out.println("Funcionário:");
-        System.out.println("Nome: " + getNome());
-        System.out.println("Email: " + getEmail());
-        System.out.println("Cargo: " + cargo);
+        System.out.println("Nome: " + this.getNome());
+        System.out.println("Email: " + this.getEmail());
+        System.out.println("Cargo: " + this.cargo);
     }
 
     public String getCargo() {

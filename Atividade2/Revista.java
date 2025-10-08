@@ -8,19 +8,19 @@ public class Revista extends Material {
         this.edicao = edicao;
     }
 
-    @Override
+    @Override //sobrescrita
     public void descricao() {
         System.out.println("Revista:");
-        System.out.println("Título: " + getTitulo());
-        System.out.println("Ano de Publicação: " + getAnoPublicacao());
-        System.out.println("Edição: " + edicao);
+        System.out.println("Título: " + this.getTitulo());
+        System.out.println("Ano de Publicação: " + this.getAnoPublicacao());
+        System.out.println("Edição: " + this.edicao);
     }
 
     public Integer getEdicao() {
         return edicao;
     }
 
-    public void setEdicao(Integer autor) {
+    public void setEdicao(Integer edicao) {
         this.edicao = edicao;
     }
 }

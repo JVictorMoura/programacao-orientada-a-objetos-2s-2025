@@ -15,11 +15,11 @@ public class Emprestimo {
 
     public void exibirDetalhes() {
         System.out.println("          Detalhes do Empréstimo ");
-        System.out.println("Data do Empréstimo: " + dataEmprestimo);
-        System.out.println("Data de Devolução: " + dataDevolucao);
+        System.out.println("Data do Empréstimo: " + this.dataEmprestimo);
+        System.out.println("Data de Devolução: " + this.dataDevolucao);
         System.out.println();
         pessoa.exibirInfo();
-        System.out.println();
+        System.out.println("Material vinculado.");
         material.descricao();
         System.out.println("------------------------------\n");
     }
