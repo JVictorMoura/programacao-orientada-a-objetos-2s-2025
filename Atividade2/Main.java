@@ -13,6 +13,9 @@ public class Main {
 
         int opcao;
 
+        Instituicao u1 = new Instituicao("Brasilia", "123kghk", "kkkkkk");
+        Colecao l1 = new Colecao("joao", 100);
+        Emprestimo e1 = new Emprestimo(u1, material, "19/10/2025", "21/10/2025");
         do {
             System.out.println("===== SISTEMA DE BIBLIOTECA =====");
             System.out.println("1 - Cadastrar Usuário");

@@ -1,16 +1,16 @@
-
-
-public class Emprestimo {
-    private Pessoa pessoa;
+public class Emprestimo implements TomadorEmprestimo{  
+    private TomadorEmprestimo tomadorEmprestimo;
     private Material material;
     private String dataEmprestimo;
     private String dataDevolucao;
+    private Colecao colecao;
 
-    public Emprestimo(Pessoa pessoa, Material material, String dataEmprestimo, String dataDevolucao) {
-        this.pessoa = pessoa;
+    public Emprestimo(TomadorEmprestimo tomadorEmprestimo, Material material, String dataEmprestimo, String dataDevolucao, Colecao colecao) {
+        this.tomadorEmprestimo = tomadorEmprestimo;
         this.material = material;
         this.dataEmprestimo = dataEmprestimo;
         this.dataDevolucao = dataDevolucao;
+        this.colecao = colecao;
     }
 
     public void exibirDetalhes() {
@@ -18,14 +18,15 @@ public class Emprestimo {
         System.out.println("Data do Empréstimo: " + this.dataEmprestimo);
         System.out.println("Data de Devolução: " + this.dataDevolucao);
         System.out.println();
-        pessoa.exibirInfo();
+        tomadorEmprestimo.exibirInfo();
         System.out.println("Material vinculado.");
         material.descricao();
         System.out.println("------------------------------\n");
+        
     }
 
-    public Pessoa getPessoa() {
-        return pessoa;
+    public TomadorEmprestimo getall() {
+        return tomadorEmprestimo;
     }
 
     public Material getMaterial() {
@@ -38,5 +39,13 @@ public class Emprestimo {
 
     public String getDataDevolucao() {
         return dataDevolucao;
+    }
+
+    public Colecao getColecao() {
+        return colecao;
+    }
+
+    public void setColecao(Colecao colecao) {
+        this.colecao = colecao;
     }
 }

@@ -1,10 +1,16 @@
 
 
-public abstract class Pessoa {
+public abstract class Pessoa implements TomadorEmprestimo{
     private String nome;
     private String email;
 
-    public abstract void exibirInfo();
+    @Override
+    public void exibirInfo() {
+        System.out.println("nome" + nome);
+        System.out.println("email" + email);
+    }
+
+
 
     public Pessoa(String nome, String email) {
         this.nome = nome;
