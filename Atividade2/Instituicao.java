@@ -2,7 +2,7 @@ public class Instituicao implements TomadorEmprestimo{
     private String nome;
     private String cnpj;
     private String cidade;
-
+ 
     @Override
     public void exibirInfo() {
        System.out.println("Nome" + this.nome);

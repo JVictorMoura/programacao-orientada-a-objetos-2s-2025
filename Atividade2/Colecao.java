@@ -3,11 +3,11 @@ public class Colecao implements ItemEmprestavel{
     private String proprietario;
     private Integer quantidadeItens;
 
-    @Override
-    public void itemEmprestado() {
-         System.out.println("Proprietario:"+ proprietario);
-         System.out.println("quantidade:"+ quantidadeItens);
-    }
+    void descricao(){
+System.out.println("proprietario" + this.proprietario);
+System.out.println("quantidade de itens" + this.quantidade);
+
+ }
 
     
 

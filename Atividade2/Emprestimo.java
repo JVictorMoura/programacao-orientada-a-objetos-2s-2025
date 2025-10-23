@@ -1,22 +1,59 @@
-public class Emprestimo implements TomadorEmprestimo{  
+public class Emprestimo{  
     private TomadorEmprestimo tomadorEmprestimo;
-    private Material material;
+    private ItemEmprestavel itemEmprestavel;
     private String dataEmprestimo;
     private String dataDevolucao;
-    private Colecao colecao;
 
-    public Emprestimo(TomadorEmprestimo tomadorEmprestimo, Material material, String dataEmprestimo, String dataDevolucao, Colecao colecao) {
+
+    public Emprestimo(TomadorEmprestimo tomadorEmprestimo, ItemEmprestavel itemEmprestavel, String dataEmprestimo, String dataDevolucao) {
         this.tomadorEmprestimo = tomadorEmprestimo;
-        this.material = material;
+        this.itemEmprestavel = itemEmprestavel;
         this.dataEmprestimo = dataEmprestimo;
         this.dataDevolucao = dataDevolucao;
-        this.colecao = colecao;
+        
     }
 
+
+    public Material getTomadorEmprestimo() {
+        return tomadorEmprestimo;
+    }
+     public void setTomadorEmprestimo(TomadorEmprestimo tomadorEmprestimo) {
+        this.tomadorEmprestimo = tomadorEmprestimo;
+    }
+
+
+
+
+
+
+    public String getDataEmprestimo() {
+        return dataEmprestimo;
+    }
+    public void set dataEmprestimo(String dataEmprestimo) {
+        this.dataEmprestimo = dataEmprestimo;
+    }
+
+
+
+    public String getDataDevolucao() {
+        return dataDevolucao;
+    }
+        public void setDataDevolucao(String dataDevolucao) {
+        this.dataDevolucao = dataDevolucao;
+
+   
+
+public String getItemEmprestavel() {
+        return itemEmprestavel;
+    }
+    public void setItemEmprestavel(ItemEmprestavel itemEmprestavel) {
+        this.itemEmprestavel = itemEmprestavel;
+}
+
     public void exibirDetalhes() {
-        System.out.println("          Detalhes do Empréstimo ");
-        System.out.println("Data do Empréstimo: " + this.dataEmprestimo);
-        System.out.println("Data de Devolução: " + this.dataDevolucao);
+        System.out.println("          Detalhes do Emprestimo ");
+        System.out.println("Data do Emprestimo: " + this.dataEmprestimo);
+        System.out.println("Data de Devolucao: " + this.dataDevolucao);
         System.out.println();
         tomadorEmprestimo.exibirInfo();
         System.out.println("Material vinculado.");
@@ -24,28 +61,3 @@ public class Emprestimo implements TomadorEmprestimo{
         System.out.println("------------------------------\n");
         
     }
-
-    public TomadorEmprestimo getall() {
-        return tomadorEmprestimo;
-    }
-
-    public Material getMaterial() {
-        return material;
-    }
-
-    public String getDataEmprestimo() {
-        return dataEmprestimo;
-    }
-
-    public String getDataDevolucao() {
-        return dataDevolucao;
-    }
-
-    public Colecao getColecao() {
-        return colecao;
-    }
-
-    public void setColecao(Colecao colecao) {
-        this.colecao = colecao;
-    }
-}

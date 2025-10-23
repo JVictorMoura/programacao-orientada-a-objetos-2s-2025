@@ -1,4 +1,4 @@
 public interface ItemEmprestavel {
 
-public void itemDescricao(); 
+public void descricao(); 
 }
