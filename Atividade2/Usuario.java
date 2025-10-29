@@ -3,9 +3,19 @@
 public class Usuario extends Pessoa {
     private Integer matricula;
 
-    public Usuario(String nome, String email, Integer matricula) {
+    public Usuario(String nome, String email, Integer matricula) throws Exception {
         super(nome, email);
         this.matricula = matricula;
+        if(nome == null || nome.length() < 1){
+            // System.out.println("Nome invalido!");
+            throw new NomeInvalidoException();
+    
+        }
+        if(email == null || email.length() < 4){
+            // System.out.println("Nome invalido!");
+            throw new EmailInvalidoException();
+         
+        }
     }
 
     @Override

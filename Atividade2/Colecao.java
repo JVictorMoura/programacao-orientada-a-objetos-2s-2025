@@ -3,9 +3,9 @@ public class Colecao implements ItemEmprestavel{
     private String proprietario;
     private Integer quantidadeItens;
 
-    void descricao(){
+    public void descricao(){
 System.out.println("proprietario" + this.proprietario);
-System.out.println("quantidade de itens" + this.quantidade);
+System.out.println("quantidade de itens" + this.quantidadeItens);
 
  }
 

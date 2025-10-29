@@ -14,7 +14,7 @@ public class Emprestimo{
     }
 
 
-    public Material getTomadorEmprestimo() {
+    public TomadorEmprestimo getTomadorEmprestimo() {
         return tomadorEmprestimo;
     }
      public void setTomadorEmprestimo(TomadorEmprestimo tomadorEmprestimo) {
@@ -29,7 +29,7 @@ public class Emprestimo{
     public String getDataEmprestimo() {
         return dataEmprestimo;
     }
-    public void set dataEmprestimo(String dataEmprestimo) {
+    public void setDataEmprestimo(String dataEmprestimo) {
         this.dataEmprestimo = dataEmprestimo;
     }
 
@@ -40,10 +40,10 @@ public class Emprestimo{
     }
         public void setDataDevolucao(String dataDevolucao) {
         this.dataDevolucao = dataDevolucao;
-
+        }
    
 
-public String getItemEmprestavel() {
+public ItemEmprestavel getItemEmprestavel() {
         return itemEmprestavel;
     }
     public void setItemEmprestavel(ItemEmprestavel itemEmprestavel) {
@@ -57,7 +57,7 @@ public String getItemEmprestavel() {
         System.out.println();
         tomadorEmprestimo.exibirInfo();
         System.out.println("Material vinculado.");
-        material.descricao();
+        itemEmprestavel.descricao();
         System.out.println("------------------------------\n");
-        
     }
+}

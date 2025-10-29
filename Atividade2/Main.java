@@ -1,10 +1,10 @@
 
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+
+    public static void main(String[] args) /*throws Exception*/{
         Scanner sc = new Scanner(System.in);
 
         ArrayList<Pessoa> pessoas = new ArrayList<>();
@@ -15,7 +15,7 @@ public class Main {
 
         Instituicao u1 = new Instituicao("Brasilia", "123kghk", "kkkkkk");
         Colecao l1 = new Colecao("joao", 100);
-        Emprestimo e1 = new Emprestimo(u1, material, "19/10/2025", "21/10/2025");
+        Emprestimo e1 = new Emprestimo(u1, l1, "19/10/2025", "21/10/2025");
         emprestimos.add(e1);
         do {
             System.out.println("===== SISTEMA DE BIBLIOTECA =====");
@@ -41,8 +41,19 @@ public class Main {
                     System.out.print("Matrícula: ");
                     int matricula = sc.nextInt();
                     sc.nextLine();
-                    pessoas.add(new Usuario(nomeU, emailU, matricula));
-                    System.out.println("Usuário cadastrado com sucesso!\n");
+                    try {
+                        
+                        pessoas.add(new Usuario(nomeU, emailU, matricula));
+                        System.out.println("Usuário cadastrado com sucesso!\n");
+                    }
+                     catch (NomeInvalidoException e) {
+                      
+                        // TODO: handle exception
+                    }
+                    catch(EmailInvalidoException e){
+
+                    }
+
                     break;
 
                 case 2:
@@ -119,10 +130,14 @@ public class Main {
                     String dataE = sc.nextLine();
                     System.out.print("Data de devolução: ");
                     String dataD = sc.nextLine();
-
-                    emprestimos.add(new Emprestimo(pessoas.get(idxUsuario),
-                            materiais.get(idxMaterial),
-                            dataE, dataD));
+                    try {//tenta executar o codigo:
+                        emprestimos.add(new Emprestimo(pessoas.get(idxUsuario),
+                                materiais.get(idxMaterial),
+                                dataE, dataD));
+                    } catch (Exception e) {//caso nao consiga:
+                        System.out.println("Algo deu errado!");
+                        // TODO: handle exception
+                    }
                     System.out.println("Empréstimo cadastrado!\n");
                     break;
 
@@ -147,3 +162,6 @@ public class Main {
         sc.close();
     }
 }
+
+
+//try/catch
